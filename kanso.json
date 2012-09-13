@@ -9,10 +9,5 @@
         "properties": null,
         "settings": null,
         "couchtypes": null
-    },
-    "devDependencies": {
-        "tap": "~0.2.3",
-        "nock": null,
-        "cradle": null
     }
 }
