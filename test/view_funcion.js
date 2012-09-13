@@ -1,5 +1,4 @@
 var tap = require('tap')
-var nock = require('nock');
 var cradle = require('cradle');
 
 var c = new(cradle.Connection);
@@ -32,9 +31,9 @@ tap.test('The Couch app loads', function(t) {
 tap.test('The list function', function(t) {
 
   var app = require('../lib/app')
-    , full = app.lists.full;
+    , embedded = app.lists.embedded;
 
-  t.type(full, 'function', 'Show function "hello" in the couch app')
+  t.type(embedded, 'function', 'Show list "embedded"');
 
   var doc = { "_id" : "xxx/123" }
     , null_req = {'query':{}}
@@ -48,16 +47,9 @@ tap.test('The list function', function(t) {
 
 tap.test('The view function', function(t) {
 
-  var mock = nock('http://localhost:5984/dbcep')
-        .get("/_design/cep/_view/full")
-        .replyWithFile(200, __dirname + '/fixture/view/full.json');
-         // .log(console.log);
-
-
     db.view('cep/full', function (err, res) {
         console.log(res);
-        console.log(mock);
-        t.equal(res, mock, "teste de retorno vazio");
+        t.equal(res, '', "teste de retorno vazio");
     });
 
   t.end()
