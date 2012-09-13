@@ -1,0 +1,6 @@
+*.swp
+packages
+node_modules
+.kansorc
+log
+*~

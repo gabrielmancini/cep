@@ -1,0 +1,10 @@
+{
+    "_id": "logradouro/1002",
+    "nome": "Rua Vergueiro",
+    "localidade": {
+        "_id":"localidade/1001"
+    },
+    "bairro": {
+        "_id":"bairro/1001"
+    }
+}

@@ -1,0 +1,10 @@
+{ "name"   : "cep"
+, "description": "A simple hello-world Couch app"
+, "version": "0.1.0"
+, "private": true
+, "devDependencies": {
+           "tap": "~0.2.3",
+        "nock": null,
+        "cradle": null
+}
+}
