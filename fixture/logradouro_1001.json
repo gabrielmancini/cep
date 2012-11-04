@@ -4,7 +4,11 @@
     "localidade": {
         "_id":"localidade/1001"
     },
-    "bairro": {
+    "bairroInicial": {
+        "_id":"bairro/1001"
+    },
+    "bairroFinal": {
         "_id":"bairro/1002"
-    }
+    },
+    "cep": "04101001"
 }

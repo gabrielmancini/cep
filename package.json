@@ -4,10 +4,9 @@
     , "version": "0.1.0"
     , "private": true
     , "dependencies": {
-        "tap": "~0.2.3"
-        , "nock": null
+        "jasmine-node": null
+        , "tap": null
         , "cradle": null
-        , "mdb": null
     }
     , "engines": {
         "node": "0.8.x"

@@ -6,3 +6,4 @@ log
 *~
 couchdb.stderr
 couchdb.stdout
+*.swo
