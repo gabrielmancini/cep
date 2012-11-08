@@ -4,4 +4,6 @@ node_modules
 .kansorc
 log
 *~
+couchdb.stderr
+couchdb.stdout
 *.swo
